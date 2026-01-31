@@ -31,6 +31,7 @@ const GameCanvas: React.FC<GameCanvasProps> = ({ gameState, onShoot, onReward, u
 
   // Load Assets
   useEffect(() => {
+    console.log("GameCanvas mounted");
     const assetList = [
       { key: 'bg', src: '/assets/bg.png' },
       { key: 'cannon_base', src: '/assets/cannon_base.png' },
@@ -45,10 +46,22 @@ const GameCanvas: React.FC<GameCanvasProps> = ({ gameState, onShoot, onReward, u
       const img = new Image();
       img.src = item.src;
       img.onload = () => {
+        console.log(`Loaded asset: ${item.key}`);
         assets.current[item.key] = img;
         loadedCount++;
         if (loadedCount === assetList.length) {
+          console.log("All assets loaded");
           imagesLoaded.current = true;
+        }
+      };
+      img.onerror = (e) => {
+        console.error(`Failed to load asset: ${item.key}`, e);
+        // Count it anyway so we don't get stuck, but maybe don't set imagesLoaded if critical?
+        // Let's count it to allow partial rendering
+        loadedCount++;
+        if (loadedCount === assetList.length) {
+             console.log("All assets processed (some failed)");
+             imagesLoaded.current = true; 
         }
       };
     });
@@ -215,15 +228,25 @@ const GameCanvas: React.FC<GameCanvasProps> = ({ gameState, onShoot, onReward, u
     effects.current = effects.current.filter(e => e.lifetime > 0);
 
     // 7. Draw
-    draw();
+    try {
+        draw();
+    } catch (e) {
+        console.error("Error drawing frame:", e);
+    }
     requestRef.current = requestAnimationFrame(update);
   };
 
   const draw = () => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas) {
+        console.warn("Canvas ref is null");
+        return;
+    }
     const ctx = canvas.getContext('2d');
-    if (!ctx) return;
+    if (!ctx) {
+        console.warn("2D Context is null");
+        return;
+    }
 
     // Clear background
     if (imagesLoaded.current && assets.current.bg) {
