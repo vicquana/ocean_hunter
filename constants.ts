@@ -2,14 +2,14 @@
 import { FishType, FishTemplate } from './types';
 
 export const FISH_TEMPLATES: FishTemplate[] = [
-  { type: FishType.SMALL, name: 'Clownfish', reward: 2, hp: 1, speed: 1.5, radius: 15, color: '#FF8C00' },
-  { type: FishType.SMALL, name: 'Blue Tang', reward: 5, hp: 2, speed: 2, radius: 18, color: '#4169E1' },
-  { type: FishType.MEDIUM, name: 'Butterfly Fish', reward: 10, hp: 5, speed: 1.2, radius: 25, color: '#FFFF00' },
-  { type: FishType.MEDIUM, name: 'Angelfish', reward: 20, hp: 8, speed: 1, radius: 30, color: '#FF00FF' },
-  { type: FishType.LARGE, name: 'Shark', reward: 50, hp: 20, speed: 0.8, radius: 45, color: '#708090' },
-  { type: FishType.LARGE, name: 'Turtle', reward: 100, hp: 40, speed: 0.5, radius: 55, color: '#228B22' },
-  { type: FishType.GOLDEN, name: 'Golden Fish', reward: 500, hp: 60, speed: 1.5, radius: 35, color: '#FFD700' },
-  { type: FishType.BOSS, name: 'Kraken', reward: 2000, hp: 250, speed: 0.3, radius: 90, color: '#8B0000' },
+  { type: FishType.SMALL, name: 'Clownfish', reward: 2, hp: 1, speed: 1.5, radius: 20, color: '#FF8C00', imgUrl: '/assets/fish_small.png' },
+  { type: FishType.SMALL, name: 'Blue Tang', reward: 5, hp: 2, speed: 2, radius: 22, color: '#4169E1', imgUrl: '/assets/fish_small.png' },
+  { type: FishType.MEDIUM, name: 'Butterfly Fish', reward: 10, hp: 5, speed: 1.2, radius: 30, color: '#FFFF00', imgUrl: '/assets/fish_medium.png' },
+  { type: FishType.MEDIUM, name: 'Angelfish', reward: 20, hp: 8, speed: 1, radius: 35, color: '#FF00FF', imgUrl: '/assets/fish_medium.png' },
+  { type: FishType.LARGE, name: 'Shark', reward: 50, hp: 20, speed: 0.8, radius: 60, color: '#708090', imgUrl: '/assets/fish_large.png' },
+  { type: FishType.LARGE, name: 'Turtle', reward: 100, hp: 40, speed: 0.5, radius: 70, color: '#228B22', imgUrl: '/assets/fish_large.png' },
+  { type: FishType.GOLDEN, name: 'Golden Fish', reward: 500, hp: 60, speed: 1.5, radius: 45, color: '#FFD700', imgUrl: '/assets/fish_medium.png' },
+  { type: FishType.BOSS, name: 'Kraken', reward: 2000, hp: 250, speed: 0.3, radius: 120, color: '#8B0000', imgUrl: '/assets/fish_large.png' },
 ];
 
 export const CANNON_CONFIGS = [
