@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Butterfly Fish -->
+  <g transform="translate(32, 32) scale(1)">
+    <!-- Body -->
+    <path d="M-15,0 L15,-15 L15,15 Z" fill="#FFFF00" />
+    <ellipse cx="0" cy="0" rx="15" ry="12" fill="#FFFF00" />
+    
+    <!-- Stripes -->
+    <path d="M-5,-10 L-5,10" stroke="black" stroke-width="1" />
+    <path d="M5,-10 L5,10" stroke="black" stroke-width="1" />
+    
+    <!-- Snout -->
+    <path d="M-15,0 L-20,-2 L-20,2 Z" fill="#333" />
+    
+    <!-- Eye -->
+    <circle cx="-10" cy="-3" r="1.5" fill="black" />
+  </g>
+</svg>

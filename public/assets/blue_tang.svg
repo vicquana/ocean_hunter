@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue Tang -->
+  <g transform="translate(32, 32) scale(0.9)">
+    <!-- Body -->
+    <path d="M-20,0 Q0,-18 20,0 Q0,18 -20,0" fill="#4169E1" />
+    
+    <!-- Tail -->
+    <path d="M20,0 L28,-8 L28,8 Z" fill="#FFFF00" />
+    
+    <!-- Fins -->
+    <path d="M0,-15 L10,-20 L5,-10" fill="#4169E1" />
+    
+    <!-- Pattern -->
+    <path d="M-5,-5 Q5,0 -5,5" stroke="black" stroke-width="1" fill="none" opacity="0.3" />
+    
+    <!-- Eye -->
+    <circle cx="-12" cy="-3" r="1.5" fill="black" />
+  </g>
+</svg>

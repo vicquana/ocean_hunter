@@ -1,0 +1,20 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Clownfish -->
+  <g transform="translate(32, 32) scale(0.9)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="20" ry="12" fill="#FF8C00" />
+    
+    <!-- Stripes -->
+    <path d="M-10,-10 Q-5,0 -10,10 L-6,10 Q-1,0 -6,-10 Z" fill="white" />
+    <path d="M5,-11 Q10,0 5,11 L9,11 Q14,0 9,-11 Z" fill="white" />
+    
+    <!-- Fins -->
+    <path d="M5,-5 L15,-15 L10,-5" fill="#FF8C00" /> <!-- Dorsal -->
+    <path d="M5,5 L10,15 L5,8" fill="#FF8C00" />   <!-- Pelvic -->
+    <path d="M20,0 L30,-8 L30,8 Z" fill="#FF8C00" /> <!-- Tail -->
+    
+    <!-- Eye -->
+    <circle cx="-12" cy="-3" r="1.5" fill="black" />
+    <circle cx="-13" cy="-4" r="0.5" fill="white" />
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Golden Fish -->
+  <g transform="translate(32, 32) scale(1.1)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="22" ry="14" fill="#FFD700" stroke="#DAA520" stroke-width="1" />
+    
+    <!-- Scales -->
+    <path d="M-5,-5 Q0,0 -5,5" stroke="#DAA520" fill="none" />
+    <path d="M5,-5 Q10,0 5,5" stroke="#DAA520" fill="none" />
+    
+    <!-- Fins -->
+    <path d="M0,-14 L10,-22 L15,-10" fill="#FFD700" stroke="#DAA520" stroke-width="1" />
+    <path d="M22,0 L32,-10 L32,10 Z" fill="#FFD700" stroke="#DAA520" stroke-width="1" />
+    
+    <!-- Sparkle -->
+    <path d="M-10,-10 L-8,-15 L-6,-10 L-1,-8 L-6,-6 L-8,-1 L-10,-6 L-15,-8 Z" fill="white" opacity="0.8" />
+    
+    <!-- Eye -->
+    <circle cx="-12" cy="-3" r="2" fill="white" />
+    <circle cx="-12" cy="-3" r="1" fill="black" />
+  </g>
+</svg>
