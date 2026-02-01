@@ -1,0 +1,23 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shark -->
+  <g transform="translate(64, 64) scale(0.9)">
+    <!-- Body -->
+    <path d="M-60,0 Q-30,-25 30,-15 Q60,-5 50,5 Q30,20 -30,10 Q-60,5 -60,0" fill="#708090" />
+    
+    <!-- Dorsal Fin -->
+    <path d="M-10,-20 L0,-40 L10,-18" fill="#708090" />
+    
+    <!-- Tail -->
+    <path d="M45,0 L65,-20 L65,20 L45,0" fill="#708090" />
+    
+    <!-- Eye -->
+    <circle cx="-40" cy="-5" r="2" fill="white" />
+    <circle cx="-40" cy="-5" r="1" fill="black" />
+    
+    <!-- Gills -->
+    <path d="M-20,-5 L-20,5 M-15,-5 L-15,5 M-10,-5 L-10,5" stroke="#4a5a6a" stroke-width="2" />
+    
+    <!-- Mouth -->
+    <path d="M-50,10 Q-40,15 -35,10" stroke="black" stroke-width="1" fill="none" />
+  </g>
+</svg>

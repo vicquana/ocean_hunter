@@ -1,0 +1,25 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mermaid -->
+  <g transform="translate(64, 64) scale(0.8)">
+    <!-- Tail -->
+    <path d="M0,20 Q-20,40 -10,60 Q0,80 10,60 Q20,40 0,20 Z" fill="#20B2AA" />
+    <path d="M-10,60 Q-20,70 -30,60 M10,60 Q20,70 30,60" stroke="#20B2AA" stroke-width="3" fill="none"/>
+    
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="15" ry="25" fill="#FFE0BD" />
+    
+    <!-- Bikini -->
+    <path d="M-15,-5 Q-7,5 0,-5 Q7,5 15,-5" fill="#800080" />
+    
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="18" fill="#FFE0BD" />
+    
+    <!-- Hair -->
+    <path d="M-18,-30 Q-25,-10 -15,5 Q-5,-10 0,-30 Q5,-10 15,5 Q25,-10 18,-30 Q15,-50 0,-55 Q-15,-50 -18,-30" fill="#FF4500" />
+    
+    <!-- Face -->
+    <circle cx="-5" cy="-32" r="2" fill="black" />
+    <circle cx="5" cy="-32" r="2" fill="black" />
+    <path d="M-3,-25 Q0,-22 3,-25" stroke="black" stroke-width="1" fill="none" />
+  </g>
+</svg>

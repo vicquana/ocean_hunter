@@ -1,0 +1,22 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Orca -->
+  <g transform="translate(64, 64) scale(0.9)">
+    <!-- Body -->
+    <path d="M-50,0 Q-30,-30 30,-20 Q60,-10 50,10 Q30,30 -30,20 Q-50,10 -50,0" fill="black" />
+    
+    <!-- White Patch Eye -->
+    <ellipse cx="-25" cy="-10" rx="6" ry="4" transform="rotate(-20)" fill="white" />
+    
+    <!-- White Belly -->
+    <path d="M-30,10 Q0,25 30,10" fill="white" />
+    
+    <!-- Dorsal Fin -->
+    <path d="M0,-25 Q5,-45 10,-22" fill="black" />
+    
+    <!-- Pectoral Fin -->
+    <path d="M-10,10 Q-5,25 -20,15" fill="black" />
+    
+    <!-- Tail -->
+    <path d="M45,0 Q60,-15 65,0 Q60,15 45,0" fill="black" />
+  </g>
+</svg>

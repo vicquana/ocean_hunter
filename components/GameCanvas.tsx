@@ -36,10 +36,19 @@ const GameCanvas: React.FC<GameCanvasProps> = ({ gameState, onShoot, onReward, u
       { key: 'bg', src: '/assets/bg.png' },
       { key: 'cannon_base', src: '/assets/cannon_base.png' },
       { key: 'cannon_barrel', src: '/assets/cannon_barrel.png' },
-      { key: 'fish_small', src: '/assets/fish_small.png' },
-      { key: 'fish_medium', src: '/assets/fish_medium.png' },
-      { key: 'fish_large', src: '/assets/fish_large.png' },
     ];
+
+    // Add unique assets from templates
+    const addedKeys = new Set(['bg', 'cannon_base', 'cannon_barrel']);
+    FISH_TEMPLATES.forEach(t => {
+      if (t.imgUrl) {
+        const key = t.imgUrl.split('/').pop()?.split('.')[0];
+        if (key && !addedKeys.has(key)) {
+          assetList.push({ key, src: t.imgUrl });
+          addedKeys.add(key);
+        }
+      }
+    });
 
     let loadedCount = 0;
     assetList.forEach(item => {

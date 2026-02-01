@@ -1,0 +1,18 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Turtle -->
+  <g transform="translate(64, 64) scale(0.8)">
+    <!-- Shell -->
+    <ellipse cx="0" cy="0" rx="35" ry="25" fill="#228B22" stroke="#006400" stroke-width="2" />
+    <path d="M-20,-10 L20,-10 M-25,0 L25,0 M-20,10 L20,10" stroke="#006400" stroke-width="1" />
+    
+    <!-- Head -->
+    <ellipse cx="-40" cy="0" rx="12" ry="10" fill="#32CD32" />
+    <circle cx="-45" cy="-3" r="2" fill="black" />
+    
+    <!-- Flippers -->
+    <path d="M-20,-20 Q-10,-40 10,-25" fill="#32CD32" />
+    <path d="M-20,20 Q-10,40 10,25" fill="#32CD32" />
+    <path d="M20,-20 Q30,-30 40,-15" fill="#32CD32" />
+    <path d="M20,20 Q30,30 40,15" fill="#32CD32" />
+  </g>
+</svg>
